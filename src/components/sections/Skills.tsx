@@ -10,8 +10,14 @@ export default function Skills() {
       <div className="si">
         <div className="sec-label fi">{s.label}</div>
         <h2 className="sec-title fi" data-d="1">{s.title}</h2>
-        <p className="sec-desc fi" data-d="2">{s.desc}</p>
-        <div className="skills-grid fi" data-d="2">
+        <div className="skills-header fi" data-d="2">
+          <p className="sec-desc">{s.desc}</p>
+          <span className="skills-legend">
+            <span className="legend-dot" aria-hidden="true" />
+            {s.legendHot}
+          </span>
+        </div>
+        <div className="skills-grid fi" data-d="3">
           {s.groups.map(g => (
             <div key={g.name} className="sg">
               <div className="sg-head">
