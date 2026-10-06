@@ -1,7 +1,24 @@
 import { useEffect, useRef } from 'react'
 import { useLang } from '../../i18n/LanguageContext'
 import { useTheme } from '../../context/ThemeContext'
+import { useCountUp } from '../../hooks/useCountUp'
 import './Hero.css'
+
+function StatCounter({ value, label }: { value: string; label: string }) {
+  const match = value.match(/^(\d+)(.*)$/)
+  const num = match ? parseInt(match[1]) : null
+  const suffix = match ? match[2] : ''
+  const { value: count, ref } = useCountUp(num ?? 0, 1400)
+
+  return (
+    <div className="stat">
+      <span className="stat-num" ref={ref as React.RefObject<HTMLSpanElement>}>
+        {num !== null ? `${count}${suffix}` : value}
+      </span>
+      <span className="stat-lbl">{label}</span>
+    </div>
+  )
+}
 
 export default function Hero() {
   const { t } = useLang()
@@ -112,10 +129,7 @@ export default function Hero() {
             </div>
             <div className="hero-stats">
               {t.hero.stats.map(s => (
-                <div key={s.label} className="stat">
-                  <span className="stat-num">{s.value}</span>
-                  <span className="stat-lbl">{s.label}</span>
-                </div>
+                <StatCounter key={s.label} value={s.value} label={s.label} />
               ))}
             </div>
           </div>
