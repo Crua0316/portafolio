@@ -134,10 +134,10 @@ const en: Translations = {
     stack: 'React · Node.js · DevOps · AI',
     location: 'Medellín, Colombia 🇨🇴',
     links: [
-      { icon: '✉', bg: 'accent',   label: 'Email',   value: 'cresrugi@gmail.com' },
-      { icon: 'in', bg: 'linkedin', label: 'LinkedIn', value: 'linkedin.com/in/cristian-rua' },
-      { icon: '⌥', bg: 'github',   label: 'GitHub',  value: 'github.com/cresrugi' },
-      { icon: '☎', bg: 'whatsapp', label: 'Phone',   value: '+57 302 529 2749' },
+      { icon: '✉', bg: 'accent',   label: 'Email',    value: 'cresrugi@gmail.com',          href: 'mailto:cresrugi@gmail.com' },
+      { icon: 'in', bg: 'linkedin', label: 'LinkedIn',  value: 'linkedin.com/in/cristianrua', href: 'https://www.linkedin.com/in/cristianrua/' },
+      { icon: '⌥', bg: 'github',   label: 'GitHub',   value: 'github.com/Crua0316',         href: 'https://github.com/Crua0316' },
+      { icon: '☎', bg: 'whatsapp', label: 'WhatsApp', value: '+57 302 529 2749',             href: 'https://wa.me/573025292749' },
     ],
   },
   footer: {

@@ -15,13 +15,19 @@ export default function Contact() {
             <p>{c.intro}</p>
             <div className="contact-rows">
               {c.links.map(link => (
-                <div key={link.label} className={`clink clink-${link.bg}`}>
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`clink clink-${link.bg}`}
+                >
                   <span className="clink-ico" aria-hidden="true">{link.icon}</span>
                   <div>
                     <div className="clink-lbl">{link.label}</div>
                     <div className="clink-val">{link.value}</div>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
           </div>

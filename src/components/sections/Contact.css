@@ -20,7 +20,7 @@
   text-decoration: none;
   color: var(--fg);
   transition: all .18s;
-  cursor: default;
+  cursor: pointer;
 }
 .clink:hover { border-color: var(--accent); transform: translateX(6px); }
 
