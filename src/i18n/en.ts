@@ -36,6 +36,7 @@ const en: Translations = {
     title: 'I build impactful solutions in real-world environments',
     paragraphs: [
       'I am a <b>Full Stack Developer</b> with over 4 years of experience in web development and enterprise application projects. My career spans manufacturing, food and technology industries.',
+      'I apply <b>SOLID principles, GoF design patterns and Clean Architecture</b> as the foundation of every technical decision, prioritising maintainable, testable and scalable code.',
       'I have solid command of <b>React, Node.js and PostgreSQL</b> for full-stack development, complemented by Angular, .NET and multiple database engines.',
       'I am passionate about modern infrastructure: I work with <b>Docker, Kubernetes, Helm and CI/CD</b>, with hands-on AWS experience. I also integrate <b>AI (Claude Code)</b> to boost team productivity.',
       'English level <b>B2</b>, fluent in international technical environments. Agile methodologies: Scrum / Kanban.',
@@ -44,7 +45,8 @@ const en: Translations = {
       { icon: '⚡', title: 'Full Stack',    desc: 'React/Angular on the frontend, Node.js/.NET on the backend. Scalable end-to-end architecture.' },
       { icon: '🐳', title: 'DevOps & Cloud', desc: 'Docker, Kubernetes, Helm, CI/CD and AWS. Reliable and automated deployments.' },
       { icon: '🤖', title: 'AI & Agents',    desc: 'Building AI agents with Claude Code and designing prompts/skills to automate the development cycle.' },
-      { icon: '🗄️', title: 'Databases',     desc: 'PostgreSQL, MySQL, SQL Server and MongoDB. Query optimization and schema design.' },
+      { icon: '🗄️', title: 'Databases',      desc: 'PostgreSQL, MySQL, SQL Server and MongoDB. Query optimization and schema design.' },
+      { icon: '📐', title: 'SOLID & Architecture', desc: 'SOLID principles, GoF design patterns and Clean Architecture guiding every decision. Clean, decoupled and easy-to-maintain code.' },
     ],
   },
   skills: {
@@ -57,6 +59,7 @@ const en: Translations = {
       { icon: '🗄',  name: 'Databases',       color: '#336791', tags: [{ name: 'PostgreSQL', hot: true }, { name: 'MySQL' }, { name: 'SQL Server' }, { name: 'MongoDB' }] },
       { icon: '🐳',  name: 'DevOps & Cloud',  color: '#2496ED', tags: [{ name: 'Docker', hot: true }, { name: 'Kubernetes', hot: true }, { name: 'Helm' }, { name: 'CI/CD' }, { name: 'AWS' }, { name: 'Linux' }, { name: 'Git' }] },
       { icon: '🤖',  name: 'AI & Agents',     color: '#FF6B9D', tags: [{ name: 'Claude Code', hot: true }, { name: 'AI Agents' }, { name: 'Prompts' }, { name: 'Skills' }] },
+      { icon: '📐',  name: 'Architecture & Patterns', color: '#A78BFA', tags: [{ name: 'SOLID', hot: true }, { name: 'Clean Architecture', hot: true }, { name: 'Design Patterns', hot: true }, { name: 'Clean Code' }, { name: 'DDD' }, { name: 'TDD' }, { name: 'REST' }, { name: 'Microservices' }] },
       { icon: '📊',  name: 'Data & Methods',  color: '#F2C811', tags: [{ name: 'Power BI' }, { name: 'Scrum' }, { name: 'Kanban' }, { name: 'GitHub' }, { name: 'Code Review' }] },
     ],
   },

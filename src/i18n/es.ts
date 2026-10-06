@@ -34,6 +34,7 @@ const es = {
     title: 'Construyo soluciones que impactan en entornos reales',
     paragraphs: [
       'Soy un <b>Full Stack Developer</b> con más de 4 años de experiencia en proyectos de desarrollo web y aplicaciones empresariales. Mi trayectoria abarca industrias de manufactura, alimentos y tecnología.',
+      'Aplico <b>principios SOLID, patrones de diseño (GoF) y Clean Architecture</b> como base de cada decisión técnica, priorizando código mantenible, testeable y escalable.',
       'Tengo dominio sólido en <b>React, Node.js y PostgreSQL</b> para desarrollo full stack, complementado con Angular, .NET y múltiples motores de bases de datos.',
       'Me apasiona la infraestructura moderna: trabajo con <b>Docker, Kubernetes, Helm y CI/CD</b>, con experiencia práctica en AWS. También integro <b>IA (Claude Code)</b> para potenciar la productividad de los equipos.',
       'Nivel de inglés <b>B2</b>, comunicación fluida en entornos técnicos internacionales. Metodologías ágiles Scrum / Kanban.',
@@ -43,6 +44,7 @@ const es = {
       { icon: '🐳', title: 'DevOps & Cloud',     desc: 'Docker, Kubernetes, Helm, CI/CD y AWS. Despliegues confiables y automatizados.' },
       { icon: '🤖', title: 'IA & Agentes',        desc: 'Construcción de agentes con Claude Code y diseño de prompts/skills para automatizar el ciclo de desarrollo.' },
       { icon: '🗄️', title: 'Bases de Datos',     desc: 'PostgreSQL, MySQL, SQL Server y MongoDB. Optimización de queries y diseño de esquemas.' },
+      { icon: '📐', title: 'SOLID & Arquitectura', desc: 'Principios SOLID, patrones de diseño GoF y Clean Architecture como guía de cada decisión. Código limpio, desacoplado y fácil de mantener.' },
     ],
   },
   skills: {
@@ -55,6 +57,7 @@ const es = {
       { icon: '🗄',  name: 'Bases de Datos',       color: '#336791', tags: [{ name: 'PostgreSQL', hot: true }, { name: 'MySQL' }, { name: 'SQL Server' }, { name: 'MongoDB' }] },
       { icon: '🐳',  name: 'DevOps & Cloud',       color: '#2496ED', tags: [{ name: 'Docker', hot: true }, { name: 'Kubernetes', hot: true }, { name: 'Helm' }, { name: 'CI/CD' }, { name: 'AWS' }, { name: 'Linux' }, { name: 'Git' }] },
       { icon: '🤖',  name: 'IA & Agentes',         color: '#FF6B9D', tags: [{ name: 'Claude Code', hot: true }, { name: 'Agentes IA' }, { name: 'Prompts' }, { name: 'Skills' }] },
+      { icon: '📐',  name: 'Arquitectura & Patrones', color: '#A78BFA', tags: [{ name: 'SOLID', hot: true }, { name: 'Clean Architecture', hot: true }, { name: 'Design Patterns', hot: true }, { name: 'Clean Code' }, { name: 'DDD' }, { name: 'TDD' }, { name: 'REST' }, { name: 'Microservicios' }] },
       { icon: '📊',  name: 'Datos & Metodologías', color: '#F2C811', tags: [{ name: 'Power BI' }, { name: 'Scrum' }, { name: 'Kanban' }, { name: 'GitHub' }, { name: 'Code Review' }] },
     ],
   },
