@@ -14,12 +14,12 @@ export default function Experience() {
         <div className="timeline fi" data-d="2">
           {e.jobs.map((job, i) => (
             <div key={i} className="tl-item">
-              <div className="tl-date">
-                <span className="tl-range">{job.from}<br />{job.to}</span>
-                <span className="tl-loc">{job.location}</span>
-              </div>
               <div className="tl-dot" aria-hidden="true" />
               <div className="tl-card">
+                <div className="tl-meta">
+                  <span className="tl-range">{job.from} – {job.to}</span>
+                  <span className="tl-loc">📍 {job.location}</span>
+                </div>
                 <div className="tl-role">{job.role}</div>
                 <div className="tl-company">{job.company}</div>
                 <ul className="tl-list">

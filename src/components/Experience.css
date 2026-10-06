@@ -1,55 +1,78 @@
-.timeline { position: relative; }
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
 .timeline::before {
   content: '';
   position: absolute;
-  left: 148px;
+  left: 20px;
   top: 0; bottom: 0;
   width: 1px;
-  background: linear-gradient(to bottom, transparent, var(--border) 8%, var(--border) 92%, transparent);
+  background: linear-gradient(to bottom, transparent, var(--border) 6%, var(--border) 94%, transparent);
 }
 
 .tl-item {
-  display: grid;
-  grid-template-columns: 148px 1fr;
-  gap: 2.5rem;
+  display: flex;
+  gap: 1.75rem;
   position: relative;
-  padding-bottom: 3rem;
+  padding-bottom: 2.5rem;
+  align-items: flex-start;
 }
 .tl-item:last-child { padding-bottom: 0; }
 
-.tl-date { text-align: right; padding-top: .3rem; }
-.tl-range {
-  font-family: 'Syne', sans-serif;
-  font-size: .76rem;
-  color: var(--accent);
-  font-weight: 700;
-  letter-spacing: .03em;
-  line-height: 1.4;
-  display: block;
-}
-.tl-loc { font-size: .7rem; color: var(--fg-dim); display: block; margin-top: .25rem; }
-
+/* The dot on the left line */
 .tl-dot {
-  position: absolute;
-  left: 148px;
-  top: .4rem;
-  transform: translateX(-50%);
+  flex-shrink: 0;
+  margin-top: 1.1rem;
   width: 11px; height: 11px;
   border-radius: 50%;
   background: var(--accent);
   border: 2px solid var(--bg);
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent);
+  position: relative;
+  z-index: 1;
+  /* Center the dot on the left line */
+  margin-left: 15px;
 }
 
 .tl-card {
+  flex: 1;
+  min-width: 0;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 14px;
-  padding: 1.5rem 1.75rem;
+  padding: 1.4rem 1.6rem;
   transition: border-color .2s;
-  min-width: 0;
 }
 .tl-card:hover { border-color: color-mix(in srgb, var(--accent) 35%, var(--border)); }
+
+/* Date + location badge inside the card */
+.tl-meta {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  margin-bottom: .8rem;
+  flex-wrap: wrap;
+}
+.tl-range {
+  font-family: 'Syne', sans-serif;
+  font-size: .75rem;
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: .04em;
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  padding: .22rem .65rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+.tl-loc {
+  font-size: .73rem;
+  color: var(--fg-dim);
+  font-weight: 600;
+}
 
 .tl-role { font-family: 'Syne', sans-serif; font-size: 1.05rem; font-weight: 700; margin-bottom: .2rem; }
 .tl-company { font-size: .85rem; color: var(--accent); font-weight: 700; margin-bottom: 1rem; }
@@ -70,8 +93,6 @@
 }
 
 @media (max-width: 760px) {
-  .timeline::before { left: 0; }
-  .tl-item { grid-template-columns: 1fr; gap: .7rem; padding-bottom: 2.5rem; }
-  .tl-date { text-align: left; }
-  .tl-dot { left: 0; top: -.2rem; }
+  .tl-item { gap: 1.25rem; padding-bottom: 2rem; }
+  .tl-dot { margin-left: 15px; }
 }
