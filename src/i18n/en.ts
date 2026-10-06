@@ -19,6 +19,7 @@ const en: Translations = {
       'React & Node.js',
       'DevOps & CI/CD',
       'Docker · Kubernetes',
+      'AWS · Cloud',
       'AI & Claude Code',
       'TypeScript Enthusiast',
     ],

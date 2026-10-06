@@ -17,6 +17,7 @@ const es = {
       'React & Node.js',
       'DevOps & CI/CD',
       'Docker · Kubernetes',
+      'AWS · Cloud',
       'IA & Claude Code',
       'TypeScript Enthusiast',
     ],
