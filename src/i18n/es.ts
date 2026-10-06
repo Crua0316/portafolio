@@ -12,6 +12,8 @@ const es = {
       'Full Stack Developer con más de 4 años construyendo aplicaciones escalables en manufactura, alimentos y tecnología.',
     cta1: 'Ver experiencia',
     cta2: 'Contactar',
+    cta3: 'Descargar CV',
+    cvFile: '/cv/CV_Cristian_Rua_Giraldo_ES.pdf',
     phrases: [
       'Full Stack Developer',
       'React & Node.js',

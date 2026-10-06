@@ -101,6 +101,14 @@ export default function Hero() {
             <div className="hero-cta">
               <a href="#experiencia" className="btn-primary">{t.hero.cta1} →</a>
               <a href="#contacto" className="btn-ghost">{t.hero.cta2}</a>
+              <a
+                href={t.hero.cvFile}
+                download
+                className="btn-cv"
+                aria-label={t.hero.cta3}
+              >
+                ↓ {t.hero.cta3}
+              </a>
             </div>
             <div className="hero-stats">
               {t.hero.stats.map(s => (

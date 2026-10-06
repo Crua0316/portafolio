@@ -14,6 +14,8 @@ const en: Translations = {
       'Full Stack Developer with 4+ years building scalable applications in manufacturing, food and technology industries.',
     cta1: 'View experience',
     cta2: 'Get in touch',
+    cta3: 'Download CV',
+    cvFile: '/cv/CV_Cristian_Rua_Giraldo_EN.pdf',
     phrases: [
       'Full Stack Developer',
       'React & Node.js',
