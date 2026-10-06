@@ -19,7 +19,8 @@ const es = {
       'Docker · Kubernetes',
       'AWS · Cloud',
       'IA & Claude Code',
-      'TypeScript Enthusiast',
+      'TypeScript · Clean Code',
+      'Problem Solver',
     ],
     stats: [
       { value: '4+', label: 'Años exp.' },

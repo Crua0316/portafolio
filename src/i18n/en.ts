@@ -21,7 +21,8 @@ const en: Translations = {
       'Docker · Kubernetes',
       'AWS · Cloud',
       'AI & Claude Code',
-      'TypeScript Enthusiast',
+      'TypeScript · Clean Code',
+      'Problem Solver',
     ],
     stats: [
       { value: '4+', label: 'Years exp.' },
