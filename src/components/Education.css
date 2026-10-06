@@ -1,0 +1,20 @@
+.edu-bg { background: var(--bg-2); }
+
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.edu-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.6rem 1.75rem;
+  transition: border-color .2s, transform .15s;
+}
+.edu-card:hover { border-color: var(--accent-3); transform: translateY(-3px); }
+
+.edu-yr { font-size: .72rem; color: var(--accent-3); font-weight: 700; letter-spacing: .09em; text-transform: uppercase; margin-bottom: .7rem; }
+.edu-degree { font-family: 'Syne', sans-serif; font-size: 1.02rem; font-weight: 700; margin-bottom: .35rem; }
+.edu-inst { font-size: .87rem; color: var(--fg-muted); }

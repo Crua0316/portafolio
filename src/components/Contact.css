@@ -1,0 +1,100 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.contact-intro p { color: var(--fg-muted); font-size: 1.03rem; margin-bottom: 2rem; }
+
+.contact-rows { display: flex; flex-direction: column; gap: .85rem; }
+
+.clink {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: .95rem 1.2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--fg);
+  transition: all .18s;
+  cursor: default;
+}
+.clink:hover { border-color: var(--accent); transform: translateX(6px); }
+
+.clink-ico {
+  width: 36px; height: 36px;
+  border-radius: 9px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+  font-style: normal;
+  background: color-mix(in srgb, var(--accent) 11%, var(--surface-2));
+}
+.clink-linkedin .clink-ico { background: color-mix(in srgb, #0A66C2 11%, var(--surface-2)); }
+.clink-github .clink-ico   { background: color-mix(in srgb, var(--fg-dim) 20%, var(--surface-2)); }
+.clink-whatsapp .clink-ico { background: color-mix(in srgb, #25D366 11%, var(--surface-2)); }
+
+.clink-lbl { font-size: .69rem; color: var(--fg-dim); letter-spacing: .07em; text-transform: uppercase; font-weight: 700; }
+.clink-val { font-size: .88rem; font-weight: 700; }
+
+.profile-card {
+  background: linear-gradient(140deg,
+    color-mix(in srgb, var(--accent) 9%, var(--surface)) 0%,
+    color-mix(in srgb, var(--accent-3) 9%, var(--surface)) 100%);
+  border: 1px solid color-mix(in srgb, var(--accent) 18%, var(--border));
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: .9rem;
+}
+
+.avatar {
+  width: 72px; height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-3));
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Syne', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #050709;
+  flex-shrink: 0;
+}
+
+.profile-card h3 { font-family: 'Syne', sans-serif; font-size: 1.25rem; font-weight: 800; }
+.pc-role  { font-size: .9rem;  color: var(--fg-muted); }
+.pc-stack { font-size: .82rem; color: var(--fg-muted); }
+.pc-loc   { font-size: .8rem;  color: var(--fg-dim); }
+
+.avail-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  padding: .45rem .95rem;
+  background: color-mix(in srgb, #4ADE80 11%, transparent);
+  border: 1px solid color-mix(in srgb, #4ADE80 28%, transparent);
+  border-radius: 999px;
+  font-size: .78rem;
+  font-weight: 700;
+  color: #4ADE80;
+}
+.avail-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: #4ADE80;
+  animation: pulse 1.6s ease-in-out infinite;
+}
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.55;transform:scale(.8)} }
+
+@media (prefers-reduced-motion: reduce) {
+  .avail-dot { animation: none; }
+}
+
+@media (max-width: 760px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
