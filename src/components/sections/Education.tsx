@@ -1,4 +1,4 @@
-import { useLang } from '../i18n'
+import { useLang } from '../../i18n/LanguageContext'
 import './Education.css'
 
 export default function Education() {

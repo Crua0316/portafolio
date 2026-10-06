@@ -1,0 +1,21 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  font-size: .73rem;
+  font-weight: 700;
+  padding: .22rem .6rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.chip--accent {
+  background: color-mix(in srgb, var(--accent-2) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent-2) 28%, transparent);
+  color: var(--accent-2);
+}
+
+.chip--primary {
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  color: var(--accent);
+}

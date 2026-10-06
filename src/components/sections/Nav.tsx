@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { useLang } from '../i18n'
-import { useTheme } from '../context/ThemeContext'
+import { useLang } from '../../i18n/LanguageContext'
+import { useTheme } from '../../context/ThemeContext'
 import './Nav.css'
 
 export default function Nav() {

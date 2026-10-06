@@ -1,4 +1,6 @@
-import { useLang } from '../i18n'
+import { useLang } from '../../i18n/LanguageContext'
+import Chip from '../ui/Chip'
+import '../ui/Chip.css'
 import './Experience.css'
 
 export default function Experience() {
@@ -26,7 +28,7 @@ export default function Experience() {
                   {job.bullets.map((b, j) => <li key={j}>{b}</li>)}
                 </ul>
                 <div className="tl-chips">
-                  {job.chips.map(c => <span key={c} className="chip">{c}</span>)}
+                  {job.chips.map(c => <Chip key={c} label={c} />)}
                 </div>
               </div>
             </div>
