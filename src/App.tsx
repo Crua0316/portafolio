@@ -9,6 +9,7 @@ import Experience from './components/Experience'
 import Education from './components/Education'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import ScrollProgress from './components/ScrollProgress'
 
 function Portfolio() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function Portfolio() {
 
   return (
     <>
+      <ScrollProgress />
       <Nav />
       <main>
         <Hero />
