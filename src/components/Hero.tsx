@@ -84,28 +84,39 @@ export default function Hero() {
     <section className="hero" id="inicio">
       <canvas ref={canvasRef} className="hero-canvas" aria-hidden="true" />
       <div className="hero-inner">
-        <div className="hero-eyebrow">{t.hero.available}</div>
-        <h1>
-          Cristian<br />
-          <span className="name-gradient">Esteban Rua</span><br />
-          Giraldo
-        </h1>
-        <div className="hero-tw">
-          <span ref={twRef} />
-          <span className="tw-cursor" aria-hidden="true" />
-        </div>
-        <p className="hero-subtitle">{t.hero.subtitle}</p>
-        <div className="hero-cta">
-          <a href="#experiencia" className="btn-primary">{t.hero.cta1} →</a>
-          <a href="#contacto" className="btn-ghost">{t.hero.cta2}</a>
-        </div>
-        <div className="hero-stats">
-          {t.hero.stats.map(s => (
-            <div key={s.label} className="stat">
-              <span className="stat-num">{s.value}</span>
-              <span className="stat-lbl">{s.label}</span>
+        <div className="hero-body">
+          <div className="hero-text">
+            <div className="hero-eyebrow">{t.hero.available}</div>
+            <h1>
+              Cristian<br />
+              <span className="name-gradient">Esteban Rua</span><br />
+              Giraldo
+            </h1>
+            <div className="hero-tw">
+              <span ref={twRef} />
+              <span className="tw-cursor" aria-hidden="true" />
             </div>
-          ))}
+            <p className="hero-subtitle">{t.hero.subtitle}</p>
+            <div className="hero-cta">
+              <a href="#experiencia" className="btn-primary">{t.hero.cta1} →</a>
+              <a href="#contacto" className="btn-ghost">{t.hero.cta2}</a>
+            </div>
+            <div className="hero-stats">
+              {t.hero.stats.map(s => (
+                <div key={s.label} className="stat">
+                  <span className="stat-num">{s.value}</span>
+                  <span className="stat-lbl">{s.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="hero-photo-wrap" aria-hidden="true">
+            <div className="hero-photo-glow" />
+            <div className="hero-photo-frame">
+              <img src="/photo.jpg" alt="Cristian Rua Giraldo" className="hero-photo" />
+            </div>
+          </div>
         </div>
       </div>
     </section>

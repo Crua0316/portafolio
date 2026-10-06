@@ -27,7 +27,9 @@ export default function Contact() {
           </div>
 
           <div className="profile-card">
-            <div className="avatar" aria-hidden="true">CR</div>
+            <div className="avatar">
+              <img src="/photo.jpg" alt="Cristian Rua Giraldo" className="avatar-img" />
+            </div>
             <div className="avail-badge">
               <span className="avail-dot" aria-hidden="true" />
               {c.available}
