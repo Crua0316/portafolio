@@ -26,7 +26,7 @@ export default function Skills() {
               </div>
               <div className="tags">
                 {g.tags.map(tag => (
-                  <span key={tag.name} className={`tag${tag.hot ? ' hot' : ''}`}>
+                  <span key={tag.name} className={`tag${'hot' in tag && tag.hot ? ' hot' : ''}`}>
                     {tag.name}
                   </span>
                 ))}

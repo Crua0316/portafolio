@@ -144,4 +144,11 @@ const es = {
 } as const
 
 export default es
-export type Translations = typeof es
+
+// Converts all literal string types to `string` so en.ts can have different values
+type DeepString<T> =
+  T extends string ? string
+  : T extends readonly (infer U)[] ? readonly DeepString<U>[]
+  : { [K in keyof T]: DeepString<T[K]> }
+
+export type Translations = DeepString<typeof es>

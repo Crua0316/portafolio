@@ -37,8 +37,9 @@ export default function Hero() {
 
   /* Canvas particles */
   useEffect(() => {
-    const canvas = canvasRef.current
-    if (!canvas) return
+    const ref = canvasRef.current
+    if (!ref) return
+    const canvas: HTMLCanvasElement = ref
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
 
     const ctx = canvas.getContext('2d')!
