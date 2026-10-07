@@ -11,6 +11,7 @@ export default function Nav() {
   const links = [
     { href: '#sobre',      label: t.nav.about },
     { href: '#skills',     label: t.nav.skills },
+    { href: '#proyectos',  label: t.nav.projects },
     { href: '#experiencia', label: t.nav.experience },
     { href: '#educacion',  label: t.nav.education },
     { href: '#contacto',   label: t.nav.contact },

@@ -4,6 +4,7 @@ const en: Translations = {
   nav: {
     about: 'About',
     skills: 'Skills',
+    projects: 'Projects',
     experience: 'Experience',
     education: 'Education',
     contact: 'Contact',
@@ -63,6 +64,31 @@ const en: Translations = {
       { icon: '🤖',  name: 'AI & Agents',     color: '#FF6B9D', tags: [{ name: 'Claude Code' }, { name: 'Prompt Engineering' }, { name: 'AI Agents' }, { name: 'LLM Integration' }] },
       { icon: '📐',  name: 'Architecture & Patterns', color: '#A78BFA', tags: [{ name: 'SOLID' }, { name: 'Clean Architecture' }, { name: 'Design Patterns' }, { name: 'Clean Code' }, { name: 'DDD' }, { name: 'TDD' }, { name: 'REST' }] },
       { icon: '📊',  name: 'Data & Methods',  color: '#F2C811', tags: [{ name: 'Power BI' }, { name: 'Scrum' }, { name: 'Kanban' }, { name: 'GitHub' }, { name: 'Code Review' }] },
+    ],
+  },
+  projects: {
+    label: 'Projects',
+    title: 'Demos & Projects',
+    desc: 'Real projects built to showcase production-ready skills across different disciplines.',
+    cta: 'View live demo',
+    soon: 'Coming soon',
+    soonDesc: 'Under construction — available this week.',
+    items: [
+      {
+        title: 'FlowSync — SaaS Landing',
+        desc: 'High-converting landing page with React 18. IntersectionObserver animations, monthly/annual pricing toggle, logo marquee and interactive bento grid.',
+        stack: ['React 18', 'TypeScript', 'Vite', 'CSS'],
+      },
+      {
+        title: 'NexusBI — Analytics Dashboard',
+        desc: 'BI dashboard with real-time KPIs, 3 chart types (Recharts), paginated table with global search and collapsible sidebar with dark/light theme.',
+        stack: ['React 18', 'TypeScript', 'Recharts', 'Vite'],
+      },
+      {
+        title: 'Full Stack CRUD App',
+        desc: 'Full CRUD app with JWT authentication, Node.js/Express REST API and PostgreSQL database. Under construction.',
+        stack: ['React', 'Node.js', 'PostgreSQL', 'REST API'],
+      },
     ],
   },
   experience: {
