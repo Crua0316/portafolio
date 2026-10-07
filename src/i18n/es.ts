@@ -55,7 +55,7 @@ const es = {
     desc: 'Herramientas construidas en proyectos reales a lo largo de múltiples industrias y equipos.',
     groups: [
       { icon: '⚛',  name: 'Frontend',             color: '#61DAFB', tags: [{ name: 'React' }, { name: 'TypeScript' }, { name: 'Angular' }, { name: 'JavaScript' }, { name: 'HTML' }, { name: 'CSS' }] },
-      { icon: '⬡',  name: 'Backend',              color: '#68A063', tags: [{ name: 'Node.js' }, { name: 'TypeScript' }, { name: '.NET' }, { name: 'C#' }, { name: 'Python' }, { name: 'C' }] },
+      { icon: '⬡',  name: 'Backend',              color: '#68A063', tags: [{ name: 'Node.js' }, { name: 'TypeScript' }, { name: 'Java' }, { name: '.NET' }, { name: 'C#' }, { name: 'Python' }, { name: 'C' }] },
       { icon: '🗄',  name: 'Bases de Datos',       color: '#336791', tags: [{ name: 'PostgreSQL' }, { name: 'MySQL' }, { name: 'SQL Server' }, { name: 'MongoDB' }] },
       { icon: '🐳',  name: 'DevOps & Cloud',       color: '#2496ED', tags: [{ name: 'Docker' }, { name: 'Kubernetes' }, { name: 'Helm' }, { name: 'CI/CD' }, { name: 'AWS' }, { name: 'Linux' }, { name: 'Git' }] },
       { icon: '🤖',  name: 'IA & Agentes',         color: '#FF6B9D', tags: [{ name: 'Claude Code' }, { name: 'Prompt Engineering' }, { name: 'AI Agents' }, { name: 'LLM Integration' }] },
